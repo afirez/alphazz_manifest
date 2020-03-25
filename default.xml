@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+    <!-- remote element. -->
+    <!-- several remote element, used to specify different project's default download server -->
+    <!-- Main Attribute:
+    ┊   ┊fetch:all projects' git URL prefix
+    -->
+    <remote name="origin" fetch="." />
+    <!-- <remote name="origin" fetch="git@github.com:afirez" /> -->
+
+    <!-- default element. all projects' default attribute if project element not specified -->
+    <!-- Main Attribute:
+    ┊   ┊revision:git branch's name. master or refs/heads/master ...
+    ┊   ┊path: local sub directory used in git clone
+    ┊   ┊sync_j: repo sync threads used
+    ┊   ┊sync_c: True/False. sync specific revision(branch)
+    ┊   ┊sync_s: True/False. sync git's children project
+    -->
+    <default remote="origin" revision="master" sync_j="4" />
+
+    <!-- project element, name:unique signature pointed to project.   -->
+    <!-- project git URL: ${remote fetch}/${project name} -->
+    <project name="repo-p"      path="repo-p"      remote="origin" revision="master" />
+    <!-- <project name="test/pro_3" path="test/pro_3" remote="origin" revision="master" /> -->
+</manifest>
