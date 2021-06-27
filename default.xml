@@ -22,5 +22,7 @@
     <!-- project element, name:unique signature pointed to project.   -->
     <!-- project git URL: ${remote fetch}/${project name} -->
     <project name="repo-p"      path="repo-p"      remote="origin" revision="master" />
+    <project name="alphazz-py"      path="alphazz-py"      remote="origin" revision="main" />
+    <project name="alphazz-math"      path="alphazz-math"      remote="origin" revision="main" />
     <!-- <project name="test/pro_3" path="test/pro_3" remote="origin" revision="master" /> -->
 </manifest>
